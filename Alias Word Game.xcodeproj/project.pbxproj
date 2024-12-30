@@ -11,6 +11,7 @@
 		59B159712D20B479004E0D00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B159702D20B479004E0D00 /* ContentView.swift */; };
 		59B159732D20B47B004E0D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B159722D20B47B004E0D00 /* Assets.xcassets */; };
 		59B159772D20B47B004E0D00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B159762D20B47B004E0D00 /* Preview Assets.xcassets */; };
+		59B1597E2D20B90B004E0D00 /* WordList.json in Resources */ = {isa = PBXBuildFile; fileRef = 59B1597D2D20B90B004E0D00 /* WordList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		59B159722D20B47B004E0D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59B159742D20B47B004E0D00 /* Alias_Word_Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Alias_Word_Game.entitlements; sourceTree = "<group>"; };
 		59B159762D20B47B004E0D00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		59B1597D2D20B90B004E0D00 /* WordList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WordList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				59B1596E2D20B479004E0D00 /* Alias_Word_GameApp.swift */,
 				59B159702D20B479004E0D00 /* ContentView.swift */,
+				59B1597D2D20B90B004E0D00 /* WordList.json */,
 				59B159722D20B47B004E0D00 /* Assets.xcassets */,
 				59B159742D20B47B004E0D00 /* Alias_Word_Game.entitlements */,
 				59B159752D20B47B004E0D00 /* Preview Content */,
@@ -128,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59B159772D20B47B004E0D00 /* Preview Assets.xcassets in Resources */,
+				59B1597E2D20B90B004E0D00 /* WordList.json in Resources */,
 				59B159732D20B47B004E0D00 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
