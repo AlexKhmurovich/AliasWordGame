@@ -30,7 +30,9 @@ class TeamsViewModel: ObservableObject {
     
     @Published var currentWord = "Dog"
     @Published var userInput = ""
-    var wordsList = Words().normalWords
+    
+    @Published var wordListFromEnum = WordListType.normal
+    var wordsList: [String] = []
     var currentWordIndex = 0
     
     func changeScore(correct: Bool) {
@@ -50,7 +52,12 @@ class TeamsViewModel: ObservableObject {
             print("Last word reached. Setting nextViewIsToggled = true")
             nextViewIsToggled = true
         } else{
-            currentWordIndex += 1
+            if currentWordIndex < wordsList.count - 1{
+                currentWordIndex += 1
+            } else {
+                currentWordIndex = 0
+                wordsList.shuffle()
+            }
             currentWord = wordsList[currentWordIndex]
         }
     }
@@ -60,6 +67,7 @@ class TeamsViewModel: ObservableObject {
     }
     
     func startRound(){
+        wordsList = setWordsList()
         timer = Timer.publish(every: 1, on: .main, in: .common)
             .autoconnect()
             .sink { [weak self] _ in
@@ -107,6 +115,23 @@ class TeamsViewModel: ObservableObject {
         defaults.set(initialTimeRemaining, forKey: "initialTimeRemaining")
         defaults.set(scoreToWin, forKey: "scoreToWin")
         defaults.set(penalizeWrong, forKey: "penalizeWrong")
+    }
+    
+    func setWordsList() -> [String]{
+        switch wordListFromEnum {
+        case .normal:
+            return Words().normalWords
+        case .belarusian:
+            return Words().belarusianWords
+        case .emojis:
+            return Words().emojiWords
+        case .genZ:
+            return Words().genZWords
+        case .landmarks:
+            return Words().landmarksWords
+        case .winterHolidays:
+            return Words().winterHolidaysWords
+        }
     }
     
     func loadSettings() {

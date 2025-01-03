@@ -74,7 +74,7 @@ struct AliasGameRulesView: View {
                     Label("Step 2", systemImage: "person.3.fill")
                 }
             
-            StepView(stepTitle: "Step 3: Adjust Settings", description: "Before starting, you can adjust the following settings:\n- Time: Set the time for each round (e.g., 15, 30, 45, or 60 seconds).\n- Score to Win: Set the target score (e.g., 50 points).\n- Penalty for Wrong Answers: Decide if there should be a penalty for incorrect answers (e.g., -1 point).")
+            StepView(stepTitle: "Step 3: Adjust Settings", description: "Before starting, you can adjust the following settings:\n- Time: Set the time for each round (e.g., 15, 30, 45, or 60 seconds).\n- Score to Win: Set the target score (e.g., 50 points).\n- Penalty for Wrong Answers: Decide if there should be a penalty for incorrect answers (e.g., -1 point).\n- Set: Choose a word set to play with. (e.g., Winter Holidays)")
                 .tabItem {
                     Label("Step 3", systemImage: "slider.horizontal.3")
                 }

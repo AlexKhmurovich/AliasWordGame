@@ -43,12 +43,29 @@ struct GameSettingsView: View {
                 }
             }
             
+            
             Toggle("-1 for wrong answers", isOn: $vm.penalizeWrong)
                 .padding(.horizontal)
                 .onChange(of: vm.penalizeWrong) { _ in
                     vm.saveSettings()
                 }
             
+            Label("Choose a set", systemImage: "number")
+            Picker(selection: $vm.wordListFromEnum, label: Text("Choose a set")) {
+                Label("Normal", systemImage: "textformat")
+                    .tag(WordListType.normal)
+                Label("Winter Holidays", systemImage: "snowflake")
+                    .tag(WordListType.winterHolidays)
+                Label("Emojis", systemImage: "face.smiling")
+                    .tag(WordListType.emojis)
+                Label("Gen Z", systemImage: "sparkles")
+                    .tag(WordListType.genZ)
+                Label("Landmarks", systemImage: "map")
+                    .tag(WordListType.landmarks)
+                Label("Belarusian Nouns", systemImage: "globe")
+                    .tag(WordListType.belarusian)
+            }
+
             Spacer()
             
             NavigationLink(destination: PlayView().environmentObject(vm)){
