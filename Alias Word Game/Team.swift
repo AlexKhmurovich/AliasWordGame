@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Team: Codable, Hashable{
+    var name: String
+    var score: Int
+}

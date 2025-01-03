@@ -8,11 +8,49 @@
 import SwiftUI
 
 struct TeamCell: View {
+    var score: Int
+    var teamName: String
+    var isAccented: Bool
+    var showingDelete: Bool = false
+    var isWon: Bool
+    
+    @EnvironmentObject var vm: TeamsViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            if isWon {
+                Image(systemName: "trophy")
+            }
+            
+            Text(teamName)
+                .bold()
+            
+            Spacer()
+            
+            if !showingDelete{
+                Text("\(score)")
+            }
+            
+            
+            if showingDelete{
+                Button(action: {
+                    vm.deleteTeam(name: teamName)
+                }) {
+                    Image(systemName: "trash.fill")
+                        .foregroundColor(.secondary)
+                        .padding(10)
+                        .background(Circle().fill(Color.gray.opacity(0.2)))
+                }
+                .buttonStyle(PlainButtonStyle())
+            }
+        }
+        .padding()
+        .background(isAccented && !isWon ? Color.green.gradient : (isWon ? Color.orange.gradient : Color.gray.gradient))
+        .clipShape(.buttonBorder)
     }
 }
 
+
 #Preview {
-    TeamCell()
+    TeamCell(score: 50, teamName: "Fat Santas", isAccented: true, showingDelete: true, isWon: false)
 }

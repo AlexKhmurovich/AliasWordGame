@@ -7,21 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5929A3DB2D2354F500F4DD47 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5929A3DA2D2354F500F4DD47 /* TeamCell.swift */; };
+		5929A3DD2D23564200F4DD47 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5929A3DC2D23564200F4DD47 /* Team.swift */; };
 		59B1596F2D20B479004E0D00 /* Alias_Word_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1596E2D20B479004E0D00 /* Alias_Word_GameApp.swift */; };
 		59B159712D20B479004E0D00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B159702D20B479004E0D00 /* ContentView.swift */; };
 		59B159732D20B47B004E0D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B159722D20B47B004E0D00 /* Assets.xcassets */; };
 		59B159772D20B47B004E0D00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59B159762D20B47B004E0D00 /* Preview Assets.xcassets */; };
-		59B1597E2D20B90B004E0D00 /* WordList.json in Resources */ = {isa = PBXBuildFile; fileRef = 59B1597D2D20B90B004E0D00 /* WordList.json */; };
+		59E0183A2D24500300C0A77F /* TeamCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E018392D24500300C0A77F /* TeamCreationView.swift */; };
+		59E0183C2D24535800C0A77F /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E0183B2D24535800C0A77F /* TeamsViewModel.swift */; };
+		59E0183E2D24558700C0A77F /* ScoreDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E0183D2D24558700C0A77F /* ScoreDashboardView.swift */; };
+		59E018402D25DFA400C0A77F /* AnswerDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E0183F2D25DFA400C0A77F /* AnswerDashboardView.swift */; };
+		59E018442D27223800C0A77F /* GameSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E018432D27223800C0A77F /* GameSettingsView.swift */; };
+		59E018462D28557100C0A77F /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E018452D28557100C0A77F /* Words.swift */; };
+		59E018492D28613E00C0A77F /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 59E018482D28613E00C0A77F /* ConfettiSwiftUI */; };
+		59F24C4D2D21E4EA00B92BE4 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F24C4C2D21E4EA00B92BE4 /* PlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5929A3DA2D2354F500F4DD47 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		5929A3DC2D23564200F4DD47 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		59B1596B2D20B479004E0D00 /* Alias Word Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alias Word Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B1596E2D20B479004E0D00 /* Alias_Word_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alias_Word_GameApp.swift; sourceTree = "<group>"; };
 		59B159702D20B479004E0D00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		59B159722D20B47B004E0D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59B159742D20B47B004E0D00 /* Alias_Word_Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Alias_Word_Game.entitlements; sourceTree = "<group>"; };
 		59B159762D20B47B004E0D00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		59B1597D2D20B90B004E0D00 /* WordList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WordList.json; sourceTree = "<group>"; };
+		59E018392D24500300C0A77F /* TeamCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCreationView.swift; sourceTree = "<group>"; };
+		59E0183B2D24535800C0A77F /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
+		59E0183D2D24558700C0A77F /* ScoreDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDashboardView.swift; sourceTree = "<group>"; };
+		59E0183F2D25DFA400C0A77F /* AnswerDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerDashboardView.swift; sourceTree = "<group>"; };
+		59E018432D27223800C0A77F /* GameSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingsView.swift; sourceTree = "<group>"; };
+		59E018452D28557100C0A77F /* Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		59F24C4C2D21E4EA00B92BE4 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59E018492D28613E00C0A77F /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +74,15 @@
 			children = (
 				59B1596E2D20B479004E0D00 /* Alias_Word_GameApp.swift */,
 				59B159702D20B479004E0D00 /* ContentView.swift */,
-				59B1597D2D20B90B004E0D00 /* WordList.json */,
+				59E018392D24500300C0A77F /* TeamCreationView.swift */,
+				59E018432D27223800C0A77F /* GameSettingsView.swift */,
+				59E0183B2D24535800C0A77F /* TeamsViewModel.swift */,
+				59F24C4C2D21E4EA00B92BE4 /* PlayView.swift */,
+				59E018452D28557100C0A77F /* Words.swift */,
+				59E0183D2D24558700C0A77F /* ScoreDashboardView.swift */,
+				59E0183F2D25DFA400C0A77F /* AnswerDashboardView.swift */,
+				5929A3DA2D2354F500F4DD47 /* TeamCell.swift */,
+				5929A3DC2D23564200F4DD47 /* Team.swift */,
 				59B159722D20B47B004E0D00 /* Assets.xcassets */,
 				59B159742D20B47B004E0D00 /* Alias_Word_Game.entitlements */,
 				59B159752D20B47B004E0D00 /* Preview Content */,
@@ -88,6 +114,9 @@
 			dependencies = (
 			);
 			name = "Alias Word Game";
+			packageProductDependencies = (
+				59E018482D28613E00C0A77F /* ConfettiSwiftUI */,
+			);
 			productName = "Alias Word Game";
 			productReference = 59B1596B2D20B479004E0D00 /* Alias Word Game.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 59B159622D20B479004E0D00;
+			packageReferences = (
+				59E018472D28613E00C0A77F /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = 59B1596C2D20B479004E0D00 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -131,7 +163,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				59B159772D20B47B004E0D00 /* Preview Assets.xcassets in Resources */,
-				59B1597E2D20B90B004E0D00 /* WordList.json in Resources */,
 				59B159732D20B47B004E0D00 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,8 +174,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59E0183A2D24500300C0A77F /* TeamCreationView.swift in Sources */,
+				59E0183C2D24535800C0A77F /* TeamsViewModel.swift in Sources */,
+				59E0183E2D24558700C0A77F /* ScoreDashboardView.swift in Sources */,
+				5929A3DD2D23564200F4DD47 /* Team.swift in Sources */,
+				59F24C4D2D21E4EA00B92BE4 /* PlayView.swift in Sources */,
 				59B159712D20B479004E0D00 /* ContentView.swift in Sources */,
+				59E018402D25DFA400C0A77F /* AnswerDashboardView.swift in Sources */,
+				59E018462D28557100C0A77F /* Words.swift in Sources */,
+				5929A3DB2D2354F500F4DD47 /* TeamCell.swift in Sources */,
 				59B1596F2D20B479004E0D00 /* Alias_Word_GameApp.swift in Sources */,
+				59E018442D27223800C0A77F /* GameSettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +403,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		59E018472D28613E00C0A77F /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		59E018482D28613E00C0A77F /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59E018472D28613E00C0A77F /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 59B159632D20B479004E0D00 /* Project object */;
 }
