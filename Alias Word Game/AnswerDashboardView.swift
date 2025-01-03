@@ -20,6 +20,11 @@ struct AnswerDashboardView: View {
                         Text(word)
                         Spacer()
                         Image(systemName: isCorrect ? "checkmark" : "xmark")
+                        HStack{
+                            Link(destination: URL(string: "https://www.google.com/search?q=\(word)+definition")!) {
+                                Image(systemName: "info.circle")
+                            }
+                        }
                     }
                 }
             }
