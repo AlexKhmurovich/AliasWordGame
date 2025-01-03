@@ -101,7 +101,7 @@ struct AliasGameRulesView: View {
                 }
             
         }
-        .tabViewStyle(.page(indexDisplayMode: .always))
+        .tabViewStyle(.page(indexDisplayMode: .never))
     }
 }
 
@@ -121,7 +121,6 @@ struct StepView: View {
             ScrollView{
                 Text(description)
                     .font(.body)
-                    .foregroundColor(.black)
                     .padding(.horizontal)
                     .multilineTextAlignment(.leading)
             }
